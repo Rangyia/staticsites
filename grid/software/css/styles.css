@@ -24,20 +24,12 @@ time, mark, audio, video {
 /* BODY */
 body {
     display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
-    
-
-    /* grid-template-areas: 
+    grid-template-areas: 
         "header"
         "content"
-        "footer";
-     */
-}
-
-/* GLOBAL */
-.site-btn {
-    background-color: black;
+        "footer"
+    ;
+    gap: 20px;
 }
 
 /* HEADER */
@@ -45,10 +37,13 @@ body {
     grid-area: header;
     background-color: lightskyblue;
     display: grid;
+    grid-template-columns: auto;
 }
 
-.header-nav ul {
+.header-nav ul li {
     display: inline;
+    color: red;
+    margin: 0px 5px;
 }
 
 /* CONTENT */
@@ -61,4 +56,9 @@ body {
 .site-footer {
     grid-area: footer;
     background-color: lightseagreen;
+}
+
+/* BUTTONS */
+.btn-primary {
+    background-color: black;
 }
