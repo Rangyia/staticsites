@@ -1,3 +1,8 @@
+/* GLOBAL COLORS */
+/*
+ * Orange: #d54718
+ */
+
 /* RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -21,44 +26,109 @@ time, mark, audio, video {
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, p, a, li {
+    font-family: Raleway;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 2em;
+}
+
+/* GLOBAL */
+a:hover {
+    color: rgb(111, 111, 111);
+    transition: all 0.3s ease 0s;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-primary {
+    background-color: purple;
+}
+
 /* BODY */
 body {
     display: grid;
-    grid-template-areas: 
-        "header"
-        "content"
-        "footer"
-    ;
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2vw auto 5vw;
 }
 
-/* HEADER */
+/* -- HEADER -- */
 .site-header {
-    grid-area: header;
-    background-color: lightskyblue;
+    grid-column: 1 / span 5;
+    background-image: linear-gradient(#a52f08de, #2c140c);
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 10px;
 }
 
-.header-nav ul li {
+.site-header .header-nav {
+    grid-column: 2 / span 1;
+}
+
+.site-header .header-contact {
+    grid-column: 4 / span 1;
+}
+
+.site-header ul {
+    list-style-type: none;
+}
+
+.site-header ul li {
     display: inline;
-    color: red;
-    margin: 0px 5px;
+    margin: 0 1em;
 }
 
-/* CONTENT */
+.site-header li a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-header li a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+/* -- CONTENT -- */
 .site-content {
-    grid-area: content;
+    grid-column: 1 / span 5;
     background-color: lightgreen;
 }
 
-/* FOOTER */
-.site-footer {
-    grid-area: footer;
-    background-color: lightseagreen;
+.site-content .row {
+    grid-column: 2 / span 4;
 }
 
-/* BUTTONS */
-.btn-primary {
-    background-color: black;
+/* CONTENT: COVER */
+.site-content #cover {
+    background-image: url("../images/img-bg-computer-01.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.site-content h1 {
+    color: white;
+}
+
+
+/* CONTENT: ABOUT */
+.site-content #about {
+
+}
+
+/* CONTENT: PRODUCTS */
+
+
+/* CONTENT: PROJECTS */
+
+/* -- FOOTER -- */
+.site-footer {
+    grid-column: 1 / span 5;
+    background-color: lightseagreen;
 }

@@ -22,24 +22,37 @@
     </head>
     <body>
         <header class="site-header">
-            <nav class="header-nav">
+            <div class="header-nav">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Products</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-                <button class="btn btn-primary">Contact</button>
-            </nav>
+            </div>
+            <div class="header-contact">
+                <button class="btn btn-primary"><a href="#contact">Contact</a></button>
+            </div>
         </header>
         <div class="site-content">
-            <section id="about" class="col">About</section>
-            <section id="products" class="col">Products</section>
-            <section id="projects" class="col">Projects</section>
+            <section id="cover" class="row">
+                <h1>Hello</h1>
+            </section>
+            <section id="about" class="row">
+                <h2>About</h2>
+            </section>
+            <section id="products" class="row">
+                <h2>Products</h2>
+            </section>
+            <section id="projects" class="row">
+                <h2>Projects</h2>
+            </section>
         </div>
         <footer class="site-footer">
-            <section id="contact">Contact</section>
+            <section id="contact">
+                <h2>Contact</h2>
+            </section>
         </footer>
     </body>
 </html>
