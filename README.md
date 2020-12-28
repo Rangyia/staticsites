@@ -1,6 +1,6 @@
 # Responsive Static Websites
 
-This project has templates built with CSS grid & flexbox layouts for practice
+This project has templates built with CSS grid & flexbox layouts for capstone practice for mastering HTML / CSS / Basic JS functions.
 
 ## Grid Projects
 
