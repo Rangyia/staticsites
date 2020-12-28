@@ -1,4 +1,4 @@
-# Static Websites
+# Responsive Static Websites
 
 This project has templates built with CSS grid & flexbox layouts for practice
 
