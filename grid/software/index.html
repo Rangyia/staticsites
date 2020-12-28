@@ -4,7 +4,7 @@
         <!-- Basic Page Needs
         ––––––––––––––––––––––––––––––––––––––––––––––––––-->
         <meta charset="utf-8">
-        <title>Grid-Software</title>
+        <title>Grid Software</title>
         <meta name="description" content="Static site template built with grid layout styles">
         <meta name="author" content="Rangyia">
 
@@ -14,45 +14,81 @@
             
         <!-- FONT
         ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-        <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Poppins:400,300,600' rel='stylesheet' type='text/css'>
 
         <!-- CSS
         ––––––––––––––––––––––––––––––––––––––––––––––––––-->
         <link rel="stylesheet" href="css/styles.css">
+
+        <!-- CSS
+        ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+        <script src="js/script.js"></script>
     </head>
     <body>
         <header class="site-header">
+            <!-- Desktop menu -->
+            <div class="header-site-title">
+                <h3>Grid Software</h3>
+            </div>
             <div class="header-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#products">PRODUCTS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
             <div class="header-contact">
                 <button class="btn btn-primary"><a href="#contact">Contact</a></button>
             </div>
+
+            <!-- Mobile menu -->
+            <div id="mobile-nav">
+                <button onclick="showMobileMenu()">
+                    <img class="nav-icon" id="hamburger" src="images/icon-burger-menu.png">
+                    <img class="nav-icon" id="angle" src="images/icon-right-angle.png">
+                </button>
+            </div>
+            <div id="mobile-site-title">
+                <h3>Grid Software</h3>
+            </div>
         </header>
         <div class="site-content">
             <section id="cover" class="row">
-                <h1>Hello</h1>
+                <div id="cover-title">
+                    <h1>Grid Software</h1>
+                    <h1>Solutions</h1>
+                    <h2>Lorem Ipsum Tag Line</h2>
+                    <div id="cover-btns">
+                        <button class="btn btn-primary"><a href="#products">Products</a></button>
+                        <button class="btn btn-primary"><a href="#projects">Projects</a></button>
+                    </div>
+                </div>
             </section>
             <section id="about" class="row">
-                <h2>About</h2>
+                    <h2 id="about-header">About</h2>
+                    <div id="about-desc">
+                        <p>Lorem ipsum for example text</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae erat sed sem tincidunt egestas. Donec sit amet tempus
+                        erat, a volutpat est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Vivamus hendrerit gravida odio, pharetra sagittis risus rutrum ut. Aliquam pulvinar augue in nisl auctor, et rutrum
+                        velit tincidunt. Maecenas felis nunc, placerat eget tellus id, imperdiet imperdiet nibh. In hac habitasse platea
+                        dictumst. Morbi dapibus neque turpis, id accumsan nulla ullamcorper sit amet. Integer lorem leo, convallis non tempus
+                        id, tempor eu nunc.</p>
+                    </div>
             </section>
-            <section id="products" class="row">
+            <!-- <section id="products" class="row">
                 <h2>Products</h2>
             </section>
             <section id="projects" class="row">
                 <h2>Projects</h2>
-            </section>
+            </section> -->
         </div>
-        <footer class="site-footer">
+        <!-- <footer class="site-footer">
             <section id="contact">
                 <h2>Contact</h2>
             </section>
-        </footer>
+        </footer> -->
     </body>
 </html>
