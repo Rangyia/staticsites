@@ -49,31 +49,30 @@ a, li { text-decoration: none; list-style-type: none; }
 }
 
 /* ------------------------------------ Links --------------------------------- */
-.link {
+.link:hover {
+  transition: all 0.3s ease 0s;
   color: white;
 }
 
 /* Primary link */
-.link-primary:hover {
-  transition: all 0.3s ease 0s;
+.link-primary:hover { 
+  color: rgb(151, 151, 151);
 }
 
 /* Secondary link */
-.link-secondary:hover {
+.link-secondary {
+  color: blue;
+}
 
+.link-secondary:hover {
+  color: rgb(151, 151, 151);
 }
 
 /* ------------------------------------ Wrapper --------------------------------- */
 .site-wrapper {
 
   /* Styles */
-  margin: auto;
-  width: 100%;
-  height: 100vh;
   background-color: rgb(33, 33, 33);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 
   /* Flexbox */
   display: flex;
@@ -123,14 +122,43 @@ a, li { text-decoration: none; list-style-type: none; }
 }
 
 /* ------------------------------------ Hero --------------------------------- */
+@media (min-width: 1000px) {
+  
+  /* Parent */
+  .site-wrapper > .site-hero {
 
+    /* Background */
+    background-image: url("../../../images/exercise/img-bg-hero-exercise.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    /* Overlay */
+    box-shadow:inset 0 0 0 2000px rgba(28, 26, 34, 0.707);
+
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Temp */
+  .site-hero > h1 {
+  }
+}
 
 /* ------------------------------------ Content --------------------------------- */
-.site-wrapper > .site-content {
-
+@media (min-width: 1000px) {
+  .site-wrapper > .site-content {
+  }
 }
 
 /* ------------------------------------ Footer --------------------------------- */
-.site-wrapper > .site-footer {
-
+@media (min-width: 1000px) {
+  .site-wrapper > .site-footer {
+  }
 }
