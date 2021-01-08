@@ -11,4 +11,4 @@ This sandbox project has templates built with CSS grid & flexbox layouts practic
 ![alt text](https://github.com/Rangyia/readme-resources/blob/master/projects/staticsites/flex-exercise-cover.JPG)
 
 ### Flex-Camping
-![alt text](https://github.com/Rangyia/readme-resources/blob/master/projects/staticsites/flex-camping-cover.JPG)
+![alt text](https://github.com/Rangyia/readme-resources/blob/master/projects/staticsites/flex-camping-cover.jpg)
