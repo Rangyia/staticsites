@@ -8,5 +8,5 @@ This sandbox project has templates built with CSS grid & flexbox layouts practic
 ![alt text](https://github.com/Rangyia/readme-resources/blob/master/projects/staticsites/grid-software-cover.JPG)
 
 ## Flexbox Projects
-![alt text](https://github.com/Rangyia/readme-resources/blob/master/projects/staticsites/grid-software-cover.JPG)
+![alt text](https://github.com/Rangyia/readme-resources/blob/master/projects/staticsites/flexbox-exercise-cover.JPG)
 
