@@ -17,6 +17,18 @@ h5 { font-size: 2.0rem; }
 h6 { font-size: 1.0rem; }
 a, li { text-decoration: none; list-style-type: none; }
 
+/* ------------------------------------ Icons --------------------------------- */
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.icon:hover {
+  fill:rgb(151, 151, 151);
+  transition: all 0.3s ease 0s;
+}
+
 /* ------------------------------------ Buttons --------------------------------- */
 .btn {
   font-family: "Roboto", "Arial", "sans-serif";
@@ -73,7 +85,7 @@ a, li { text-decoration: none; list-style-type: none; }
 .site-wrapper {
 
   /* Styles */
-  background-color: rgb(33, 33, 33);
+  background-color:  rgba(28, 26, 34);
   overflow: hidden;
 
   /* Flexbox */
@@ -126,8 +138,6 @@ a, li { text-decoration: none; list-style-type: none; }
   
   /* Parent */
   .site-wrapper > .site-hero {
-
-    /* Styles */
 
     /* Background */
     background-image: url("../../../images/exercise/img-bg-hero-exercise.jpg");
@@ -188,17 +198,62 @@ a, li { text-decoration: none; list-style-type: none; }
 }
 
 .custom-shape-divider-bottom-1609901048 .shape-fill {
-  fill: #FAFAFA;
+  fill:  rgba(28, 26, 34);
+  
 }
 
 /* ------------------------------------ Content --------------------------------- */
 @media (min-width: 1000px) {
   .site-wrapper > .site-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-content > #content-row-1 {
+    /* Styles */
+    margin: 100px 0;
+
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-content > #content-row-2 {
+    /* Styles */
+    margin-bottom: 50px;;
+    padding: 250px 300px;
+    background-image: url("../../../images/exercise/img-bg-content-yoga.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* Flex */
+    display: flex;
+    justify-content: space-around;
   }
 }
 
 /* ------------------------------------ Footer --------------------------------- */
 @media (min-width: 1000px) {
   .site-wrapper > .site-footer {
+    /* Styles */
+    padding: 0 250px;
+
+    /* Flex */
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* Column 1: Follow */
+  .site-footer > #footer-col-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-footer > #footer-col-1 > ul {
+    margin-top: 20px;
+    display: inline-flex;
   }
 }
